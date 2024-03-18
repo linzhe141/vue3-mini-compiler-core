@@ -10,3 +10,5 @@
 - [x] parse
 - [ ] transform
 - [ ] generate
+- [ ] unit testing with vitest
+- [ ] ts
