@@ -8,7 +8,7 @@
 
 ## TODO
 - [x] parse
-- [ ] transform
+- [x] transform
 - [ ] generate
 - [ ] unit testing with vitest
 - [ ] ts
