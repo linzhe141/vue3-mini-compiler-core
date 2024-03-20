@@ -8,6 +8,12 @@
 
 ## TODO
 - [x] parse
-- [x] transform
+- [ ] transform
+  - [x] transformText 
+  - [x] transformElement 
+  - [ ] v-on 
 - [ ] generate
+  - [x] genElement 
+  - [x] genText 
+  - [ ] genElement v-on 
 - [ ] unit testing with vitest
