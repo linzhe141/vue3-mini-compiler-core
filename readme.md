@@ -11,9 +11,9 @@
 - [ ] transform
   - [x] transformText 
   - [x] transformElement 
-  - [ ] v-on 
-- [ ] generate
+  - [x] v-on 
+- [x] generate
   - [x] genElement 
   - [x] genText 
-  - [ ] genElement v-on 
+  - [x] genElement v-on 
 - [ ] unit testing with vitest

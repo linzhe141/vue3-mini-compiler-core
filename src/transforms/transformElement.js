@@ -16,7 +16,7 @@ export function transformElement(node, context) {
     let shouldUseBlock = false
     // props
     if (props.length > 0) {
-      const propsBuildResult = buildProps(node)
+      const propsBuildResult = buildProps(node, context)
       vnodeProps = propsBuildResult.props
     }
     // children
@@ -53,7 +53,8 @@ export function transformElement(node, context) {
   }
 }
 
-function buildProps({ props }) {
+function buildProps(node, context) {
+  const { props } = node
   const properties = []
   for (let i = 0; i < props.length; i++) {
     // static attribute
@@ -69,8 +70,13 @@ function buildProps({ props }) {
         )
       )
     } else {
-      // TODO
       // directives v-on
+      const { name } = prop
+      const directiveTransform = context.directiveTransforms[name]
+      if (directiveTransform) {
+        const { props } = directiveTransform(prop, node, context)
+        properties.push(...props)
+      }
     }
   }
   const propsExpression = createObjectExpression(properties)

@@ -71,9 +71,10 @@ function genText(node, context) {
   context.push(JSON.stringify(node.content))
 }
 function genExpression(node, context) {
-  const { content } = node
-  // context.push(isStatic ? JSON.stringify(content) : content)
-  context.push(JSON.stringify(content))
+  // isStatic 为true 就是 <div id="13" /> 的id就是一个字符串
+  // isStatic 为false 就是 <div @click="()=>foo()" /> 的click应该是一个表达式，所有在generate时，不用在进行字符串化
+  const { content, isStatic } = node
+  context.push(isStatic ? JSON.stringify(content) : content)
 }
 
 function genInterpolation(node, context) {

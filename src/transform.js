@@ -44,6 +44,7 @@ function createTransformContext(root, options) {
     root,
     helpers: new Map(),
     nodeTransforms: options.nodeTransforms || [],
+    directiveTransforms: options.directiveTransforms,
     helper(name) {
       context.helpers.set(name, 1)
       return name
