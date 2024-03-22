@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`codegen > element 1`] = `
+{
+  "ast": {
+    "children": [
+      {
+        "children": [
+          {
+            "codegenNode": {
+              "arguments": [
+                {
+                  "content": "linzhe",
+                  "type": "TEXT",
+                },
+              ],
+              "callee": "CREATE_TEXT",
+              "type": "JS_CALL_EXPRESSION",
+            },
+            "content": {
+              "content": "linzhe",
+              "type": "TEXT",
+            },
+            "type": "TEXT_CALL",
+          },
+        ],
+        "codegenNode": {
+          "children": [
+            {
+              "codegenNode": {
+                "arguments": [
+                  {
+                    "content": "linzhe",
+                    "type": "TEXT",
+                  },
+                ],
+                "callee": "CREATE_TEXT",
+                "type": "JS_CALL_EXPRESSION",
+              },
+              "content": {
+                "content": "linzhe",
+                "type": "TEXT",
+              },
+              "type": "TEXT_CALL",
+            },
+          ],
+          "isBlock": true,
+          "props": undefined,
+          "tag": ""div"",
+          "type": "VNODE_CALL",
+        },
+        "props": [],
+        "tag": "div",
+        "type": "ELEMENT",
+      },
+    ],
+    "codegenNode": {
+      "children": [
+        {
+          "codegenNode": {
+            "arguments": [
+              {
+                "content": "linzhe",
+                "type": "TEXT",
+              },
+            ],
+            "callee": "CREATE_TEXT",
+            "type": "JS_CALL_EXPRESSION",
+          },
+          "content": {
+            "content": "linzhe",
+            "type": "TEXT",
+          },
+          "type": "TEXT_CALL",
+        },
+      ],
+      "isBlock": true,
+      "props": undefined,
+      "tag": ""div"",
+      "type": "VNODE_CALL",
+    },
+    "helpers": Set {
+      "CREATE_TEXT",
+      "CREATE_ELEMENT_VNODE",
+      "OPEN_BLOCK",
+      "CREATE_ELEMENT_BLOCK",
+    },
+    "source": "<div>linzhe</div>",
+    "type": "ROOT",
+  },
+  "code": "import {createText as _createText, createElementVnode as _createElementVnode, openBlock as _openBlock, createElementBlock as _createElementBlock} from "vue"
+export function render(_ctx, _cache) {return (_openBlock(), _createElementBlock("div", null, [_createText("linzhe")]))}",
+}
+`;

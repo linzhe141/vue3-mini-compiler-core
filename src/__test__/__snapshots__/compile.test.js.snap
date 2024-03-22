@@ -1,0 +1,6 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`codegen > element 1`] = `
+"import {toDisplayString as _toDisplayString, createText as _createText, createElementVnode as _createElementVnode, openBlock as _openBlock, createElementBlock as _createElementBlock} from "vue"
+export function render(_ctx, _cache) {return (_openBlock(), _createElementBlock("div", { id: "test",disabled: "",x: "",onClick: ()=>foo() }, [_createText(_toDisplayString(yy))]))}"
+`;

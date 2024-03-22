@@ -4,9 +4,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "test": "node test.example.js"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^1.4.0"
+  }
 }
