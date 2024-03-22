@@ -8,7 +8,7 @@
 
 ## TODO
 - [x] parse
-- [ ] transform
+- [x] transform
   - [x] transformText 
   - [x] transformElement 
   - [x] v-on 
