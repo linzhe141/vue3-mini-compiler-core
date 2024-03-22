@@ -3,6 +3,7 @@ import { generate } from './src/codegen.js'
 import { transform } from './src/transform.js'
 import { transformElement } from './src/transforms/transformElement.js'
 import { transformText } from './src/transforms/transformText.js'
+import { transformOn } from './src/transforms/vOn.js'
 const input = `<div id="test" disabled x @click="()=>foo()">
   <i id="test-i">i-content</i>
   div-content
@@ -12,10 +13,9 @@ const input = `<div id="test" disabled x @click="()=>foo()">
 const ast = parse(input)
 transform(ast, {
   nodeTransforms: [transformElement, transformText],
-  // TODO
-  // directiveTransforms: {
-  //   on: transformOn,
-  // },
+  directiveTransforms: {
+    on: transformOn,
+  },
 })
 const { code } = generate(ast, {
   mode: 'module',
