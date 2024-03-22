@@ -172,7 +172,7 @@ function createRoot(children, source) {
     // codegenNode,
   }
 }
-export function parse(input) {
+export function baseParse(input) {
   currentInput = input
   root = createRoot([], currentInput)
   tokenizer.parse(currentInput)
