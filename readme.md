@@ -16,4 +16,4 @@
   - [x] genElement 
   - [x] genText 
   - [x] genElement v-on 
-- [ ] unit testing with vitest
+- [x] unit testing with vitest
